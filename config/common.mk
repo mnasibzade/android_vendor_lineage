@@ -1,6 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/mk.mk)
+$(call inherit-product-if-exists, vendor/clocks/clocks.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
